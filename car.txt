@@ -25,7 +25,7 @@ VARCHAR è utile quando i dati stringa possono avere lunghezze diverse.
 
 YEAR: Questo è un tipo di dato per memorizzare un anno. (4 CIFRE)
 
-INT: Questo è un tipo di dato numerico intero.
+MEDIUMINT: Questo è un tipo di dato numerico intero (MEDIE DIMENSIONI).
 
 FLOAT(6, 2): Questo è un tipo di dato numerico con virgola mobile. 6 sono le cifre massime, 2 sono quelel dopo la virgola
 
