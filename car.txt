@@ -1,1 +1,13 @@
 Tabella: auto x concessionario
+
+id: SMALLINT, PK
+marca: VARCHAR(255), NOT NULL
+modello: VARCHAR(255), NOT NULL
+anno: YEAR, NOT NULL
+chilometraggio: INT, NOT NULL
+tipo_carburante: VARCHAR(50), NOT NULL
+colore: VARCHAR(50), NOT NULL
+prezzo: FLOAT(5, 2), NOT NULL
+descrizione: TEXT, NULL
+stato: VARCHAR(50), NOT NULL
+targa: VARCHAR(7), UNIQUE, NOT NULL
