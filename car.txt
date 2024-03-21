@@ -1,13 +1,32 @@
 Tabella: auto x concessionario
 
 id: SMALLINT, PK
-marca: VARCHAR(255), NOT NULL
+marca: VARCHAR(100), NULL
 modello: VARCHAR(255), NOT NULL
 anno: YEAR, NOT NULL
-chilometraggio: INT, NOT NULL
-tipo_carburante: VARCHAR(50), NOT NULL
-colore: VARCHAR(50), NOT NULL
-prezzo: FLOAT(5, 2), NOT NULL
+chilometraggio: MEDIUMINT, NOT NULL
+tipo_carburante: VARCHAR(30), NULL
+colore: VARCHAR(20), NULL
+prezzo: FLOAT(6, 2), NOT NULL
 descrizione: TEXT, NULL
-stato: VARCHAR(50), NOT NULL
+stato_veicolo: VARCHAR(30), NOT NULL
 targa: VARCHAR(7), UNIQUE, NOT NULL
+venditore: VARCHAR(20) NOT NULL
+
+
+
+
+-----SPIEGAZIONE TIPI DI DATI------
+
+SMALLINT: Questo è un tipo di dato numerico intero. È utile quando si sa che il range di valori per un campo sarà relativamente piccolo.
+
+VARCHAR(100): Questo è un tipo di dato stringa di lunghezza variabile. 100 indica la lunghezza massima della stringa. 
+VARCHAR è utile quando i dati stringa possono avere lunghezze diverse.
+
+YEAR: Questo è un tipo di dato per memorizzare un anno. (4 CIFRE)
+
+INT: Questo è un tipo di dato numerico intero.
+
+FLOAT(6, 2): Questo è un tipo di dato numerico con virgola mobile. 6 sono le cifre massime, 2 sono quelel dopo la virgola
+
+TEXT: Questo è un tipo di dato stringa di lunghezza variabile, ma può contenere stringhe molto più lunghe rispetto a VARCHAR.
